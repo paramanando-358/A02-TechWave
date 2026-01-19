@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+*{
+    margin:0 ;
+    padding:0;
+    box-sizing:border-box;
+}
+
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -22,13 +29,22 @@
 
 
 .btn{
-    background:linear-gradient(to right,#F7E93F 0%, #FB09B4 51%, #9100F8 100%);
-    border-radius: 10px;
+    display: flex;
+    background:linear-gradient(47.64deg,#F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    border-radius: 100px;
     border:none;
+    padding: 12.5px 16px;
     font-size: 1rem;
     font-weight: 600;
     align-items: center;
     gap:4px;
+    color:white;
+}
+
+
+.btn span img{
+    width:16px;
+    height:16px;
 }
 /* header styles */
 
@@ -54,5 +70,133 @@ nav .menu a{
 
 #subscribe-text{
     text-align: center;
-    padding:16px 12.5px;
+    
+}
+#arrow{
+    margin-right: 16px;
+}
+
+.hamburger-icon{
+    display:none;
+}
+
+/* banner related styles */
+
+.banner{
+    display:flex;
+    flex-direction: column;
+    background-image: url("../assets/hero-bg.png");
+    width: 100%;
+    min-height:100vh;
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+
+}
+
+.banner-circle{
+    width: 350px;;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    
+}
+
+.circle-bg{
+    width:380px;
+    height:380px;
+}
+
+.mic-icon{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:116px;
+    height: 175px;
+
+}
+
+.new-badge{
+    position: absolute;
+    top:20px;
+    right:40px;
+    background:#00FF88;
+    color:#1A0B2E;
+    font-size: 12px;
+    font-weight:600;
+    padding:8px 16px;
+    border-radius:20px;
+}
+
+.btn-outline{
+    background: transparent;
+    border: 1.5px solid#00FF88;
+    color: #00FF88;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-title{
+    font-size: 3.90rem;
+    font-weight: 800;
+    margin-top:40px;
+    margin-bottom: 8px;
+}
+
+.hero-description{
+    opacity: 0.8;
+    margin-bottom: 24px;
+}
+.hero-btn{
+    align-items: center;
+    gap:8px;
+    
+}
+
+
+
+/* responsive media query */
+@media screen and (max-width:768px){
+    nav .menu{
+        display: none;
+        flex-direction: column;
+    }
+    .navbar .btn{
+        display: none;
+    }
+
+     .hamburger-icon{
+        display:block;
+    }   
+
+}
+
+/* medium device size */
+@media screen and (min-width:768px) and (max-width:1199px){
+    .navbar{
+        padding:16px 20px;
+    }
+
+    nav .menu{
+        flex-direction: column;
+    }
+    .navbar .btn{
+        display: none;
+
+    }
+      .hamburger-icon{
+        display:block;
+    } 
 }
