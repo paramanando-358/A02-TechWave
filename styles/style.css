@@ -553,6 +553,10 @@ nav .menu a{
     transform: translate(5px);
  }
 
+ .hero-btn .btn{
+    animation: none !important;
+ }
+
 
 
 
