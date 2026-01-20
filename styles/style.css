@@ -183,6 +183,89 @@ nav .menu a{
 
 }
 
+
+
+/* about section styles */
+
+#about{
+   
+    padding-top:30px;
+    background-color: #1A0B2E;
+}
+
+#about .about-container{
+    max-width: 1200px;
+    margin:0 auto;
+    text-align: center;
+    padding:50px 200px 374px 200px;
+ 
+}
+
+  .section-heading{
+        /* max-width: 1200px; */
+        text-align: center;
+    }
+.section-heading h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color:white;
+    margin-bottom: 16px;
+}
+
+.section-heading p{
+    color:white;
+    opacity: 0.5;
+    margin-bottom:130px ;
+}
+
+#about .about-container .about-info{
+    max-width: 1200px;
+    /* justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:80px;
+}
+
+.about-info h3{
+    font-size: 3rem;
+    color:green;
+}
+.about-info p{
+    color: white;
+    opacity:0.5;
+}
+
+
+/* responsive mobile device  */
+@media screen and (max-width:768px){
+    nav .menu{
+        display: none;
+        flex-direction: column;
+    }
+    .navbar .btn{
+        display: none;
+    }
+
+     .hamburger-icon{
+        display:block;
+    } 
+    
+    
+    #about .about-container{
+        padding:40px 16px 80px;
+    }
+
+    #about .about-container .about-info{
+    grid-template-columns: repeat(2,1fr);
+    gap:8px;
+}
+.section-heading p{
+    margin-bottom: 60px ;
+}
+
+
+}
+
 /* medium device size */
 @media screen and (min-width:768px) and (max-width:1199px){
     .navbar{
