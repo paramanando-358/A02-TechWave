@@ -46,6 +46,13 @@
     width:16px;
     height:16px;
 }
+
+
+.w-icon{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 21px;
+}
 /* header styles */
 
 /* navbar related styles */
@@ -166,25 +173,6 @@ nav .menu a{
 }
 
 
-
-/* responsive media query */
-@media screen and (max-width:768px){
-    nav .menu{
-        display: none;
-        flex-direction: column;
-    }
-    .navbar .btn{
-        display: none;
-    }
-
-     .hamburger-icon{
-        display:block;
-    }   
-
-}
-
-
-
 /* about section styles */
 
 #about{
@@ -236,6 +224,72 @@ nav .menu a{
 }
 
 
+
+/* why choose section styles */
+.why-choose{
+    background: rgba(35, 14, 61, 1);
+    padding:120px 200px;
+}
+.why-container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color:#FFFFFF;
+    margin-bottom: 40px;
+}
+
+
+.why-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+
+.grid-card{
+    background:linear-gradient(#351165 40%);
+    padding:40px;
+    border-radius: 40px;
+    color:#FFFFFF;
+}
+.grid-card p{
+    opacity: 0.5;
+    
+    margin-top: 16px;
+}
+
+.grid-h{
+    grid-column: 1/span 1;
+    grid-row: 1/span 2 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.grid-m{
+    grid-column: 2/span 2;
+    grid-row:1/span 1;
+}
+.grid-g{
+    grid-column: 2/span 2;
+    grid-row:2/span 1;
+}
+
+
+.grid-i{
+    grid-column:1/span 2;
+    grid-row: 3/span 2;
+}
+
+.grid-r{
+    grid-column:3/span 1;
+    grid-row: 3/span 1;
+}
+
 /* responsive mobile device  */
 @media screen and (max-width:768px){
     nav .menu{
@@ -263,8 +317,30 @@ nav .menu a{
     margin-bottom: 60px ;
 }
 
+.why-grid{
+    grid-template-columns: 1fr;
+    gap:10px;
+    
+}
+
+.grid-h, .grid-m, .grid-g, .grid-i, .grid-r {
+    grid-column: 1/-1;
+    grid-row:auto;
 
 }
+.why-choose{
+    padding:50px 15px;
+
+}
+.grid-card{
+    padding:18px;
+    border-radius: 20px;
+}
+
+}
+
+
+
 
 /* medium device size */
 @media screen and (min-width:768px) and (max-width:1199px){
