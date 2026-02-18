@@ -607,6 +607,17 @@ nav .menu a{
     border-radius: 20px;
  }
 
+ .choose-featured-card{
+    flex-direction: column;
+     align-items: center;
+    text-align: center;
+    padding:24px;
+    padding-bottom: 10px;
+ }
+ .featured-card1 , .featured-card2 , .featured-card3{
+    padding-bottom: 15px;
+ }
+
  .feature-bottom-card{
     flex-direction: column;
     align-items: center;
